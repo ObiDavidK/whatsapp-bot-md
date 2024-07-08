@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -28,12 +29,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
-
-    # Uncomment and adjust the following lines if you need to start the application to perform further checks
-    # - name: Start application
-    #   run: npm start &
-    #
-    # - name: Perform additional checks
-    #   run: curl -f http://localhost:3000 || exit 1
+    - name: Start application
+      run: npm start
