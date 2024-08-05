@@ -74,8 +74,10 @@ module.exports = {
   WARN_KICK_MESSAGE: process.env.WARN_KICK_MESSAGE || '&mention kicked',
   TRUECALLER: process.env.TRUECALLER,
   DELETE_TYPE: (process.env.DELETE_TYPE || '').trim(),
-  LIST_TYPE: (process.env.LIST_TYPE || 'poll').trim(),
+  LIST_TYPE: (process.env.LIST_TYPE || 'text').trim(),
   BING_COOKIE: (process.env.BING_COOKIE || '').trim(),
   GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '').trim(),
   ADMINS: process.env.GROUP_ADMINS || '',
+  RENDER_NAME: (process.env.RENDER_NAME || '').trim(),
+  RENDER_API_KEY: (process.env.RENDER_API_KEY || '').trim(),
 }
